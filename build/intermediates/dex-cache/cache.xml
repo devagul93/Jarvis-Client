@@ -2,11 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/Users/Codestation/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jar="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-789b9dda524ec78c08fe31d85f814f58502797f2.jar" />
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-c11b010ebab4ac8390c09373b2541df1cd828976.jar" />
+    </item>
+    <item
+        jar="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/exploded-aar/SpeechToText1/ParseUI-Widget/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5b013071876b2b6e0b1e787d7e8b8e8e5f9f444b">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/classes-48aa7160b5fe255fb744df35ce526ca24289a9cf.jar" />
+    </item>
+    <item
+        jar="/Users/Codestation/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.10.3/36366e460af2c0f224bb8f70b64e3302f638b138/parse-android-1.10.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="36366e460af2c0f224bb8f70b64e3302f638b138">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/parse-android-1.10.3-0ee6c7e38aa3632e94fca48cd165233d5a66ffb6.jar" />
+    </item>
+    <item
+        jar="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/exploded-aar/SpeechToText1/ParseUI-Login/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="654857d41d3e9504357c42f38cd3fc8c487a1943">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/classes-6f51ce585b4079edbb1e15ad574f438916bf5816.jar" />
+    </item>
+    <item
+        jar="/Users/Codestation/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-bd2675a688f7af6057192c46185abb4945f289e0.jar" />
+    </item>
+    <item
+        jar="/Users/Codestation/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.1/44780c2cf98f6a3cf4e77f1234d644758b329201/bolts-android-1.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="44780c2cf98f6a3cf4e77f1234d644758b329201">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/bolts-android-1.2.1-bf3d283de5bc8f8192a7c052eaac113d1b4f716c.jar" />
+    </item>
+    <item
+        jar="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/Codestation/Desktop/Desktop/SpeechToText1/app/build/intermediates/pre-dexed/debug/classes-dde5f9df65d58c49371f7f9a0f4f931e87d59585.jar" />
     </item>
 
 </items>

@@ -13,6 +13,12 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+import com.parse.ParseObject;
+import com.parse.ParseUser;
+import com.parse.ui.ParseLoginBuilder;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -34,6 +40,8 @@ public class MainActivity extends Activity implements
 
     private static MainActivity mInstance = null;
 
+    ParseUser user;
+
     public MainActivity(){
     }
 
@@ -48,6 +56,22 @@ public class MainActivity extends Activity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+
+        Parse.initialize(this, "QvGvOSa39nBizQdYGEcFzMNeTBT9bCb2FqJuXogh", "ox3KyIhaYtrGUm9oYDTci71664orUTCkkiMULpBn");
+
+        ParseInstallation installation = ParseInstallation
+                .getCurrentInstallation();
+
+        installation.put("userclass",
+                ParseObject.createWithoutData("userclass", "TUrmJkzcta"));
+        installation.saveInBackground();
+
+        ParseLoginBuilder builder = new ParseLoginBuilder(MainActivity.this);
+        startActivityForResult(builder.build(), 0);
+
         tcpServer = TCPServer.getInstance(MainActivity.this);
         tts = new TextToSpeech(this, this);
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
@@ -134,6 +158,16 @@ public class MainActivity extends Activity implements
 
                     }
                 }
+                break;
+            }
+            case 0: {
+
+               user =  ParseUser.getCurrentUser();
+                Log.d("user", user.getEmail() + user.getUsername());
+                ParseObject accessLog = new ParseObject("AccessLocks");
+                accessLog.put("UserName", user.getEmail());
+                accessLog.put("House","ajmera");
+                accessLog.saveInBackground();
                 break;
             }
 
