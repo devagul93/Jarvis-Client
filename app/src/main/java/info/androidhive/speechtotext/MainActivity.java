@@ -21,6 +21,9 @@ public class MainActivity extends Activity implements
 
     private TextToSpeech tts;
     private TextView txtSpeechInput;
+    public String callmess;
+    public String sender;
+    public String prevMess= ""; public String currMess =  "";
     private ImageButton btnSpeak;
     private final int REQ_CODE_SPEECH_INPUT = 100;
     Thread thread;
@@ -30,6 +33,9 @@ public class MainActivity extends Activity implements
     boolean started = false;
 
     private static MainActivity mInstance = null;
+
+    public MainActivity(){
+    }
 
     public static MainActivity getmInstance() {
         if (mInstance == null) {
@@ -64,6 +70,27 @@ public class MainActivity extends Activity implements
                 TCPServer.createServer(message);
             }
         });
+
+        if (null == getIntent()){
+
+        }else {
+            if (null == getIntent().getStringExtra("sms")){
+
+            }else {
+                callmess = getIntent().getStringExtra("sms");
+                sender = getIntent().getStringExtra("sender");
+                speakOut(sender,callmess);
+            }
+            if (null == getIntent().getStringExtra("incomingcall")){
+
+            }else {
+                callmess = getIntent().getStringExtra("incomingcall");
+                sender = getIntent().getStringExtra("sender");
+                speakOut(sender,callmess);
+            }
+
+        }
+
 
     }
 
@@ -137,7 +164,10 @@ public class MainActivity extends Activity implements
                 Log.e("TTS", "Language is not supported");
             } else {
 //				btnSpeak.setEnabled(true);
-//				speakOut();
+                if (null == callmess){
+
+                }else
+				speakOut(sender,callmess);
             }
 
         } else {
@@ -149,8 +179,30 @@ public class MainActivity extends Activity implements
         if (null == message) {
 
         } else {
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-            tts.speak(message, TextToSpeech.QUEUE_FLUSH, null);
+            prevMess = currMess;
+            currMess = message;
+            if (prevMess.equalsIgnoreCase(currMess)){
+
+            }else {
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                tts.speak(message, TextToSpeech.QUEUE_ADD, null);
+            }
+
+        }
+
+    }
+    public void speakOut(String send, String mess) {
+        if (null == mess) {
+
+        } else {
+
+            Toast.makeText(this, mess + send, Toast.LENGTH_SHORT).show();
+
+            if(mess.equalsIgnoreCase("incoming Call from ")){
+                tts.speak(mess + send, TextToSpeech.QUEUE_FLUSH, null);
+            }else  tts.speak("message from :" + send + "    "+ mess, TextToSpeech.QUEUE_FLUSH, null);
+
+
         }
 
     }
