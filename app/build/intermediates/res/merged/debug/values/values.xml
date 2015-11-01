@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/Users/Codestation/Desktop/Desktop/SpeechToText1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="navlist">
+        <item>     ACCESS LOGS</item>
+        <item>     GRANT KEY</item>
+        <item>     CHECK STATUS</item>
+        <item>     DELETE KEY</item>
+        <item>     OPTION 1</item>
+        <item>     OPTION 2</item>
+        <item>     OPTION 3</item>
+        <item>     OPTION 4</item>
+
+    </string-array>
     <!-- From: file:/Users/Codestation/Desktop/Desktop/SpeechToText1/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="bg_gradient_end">#6b394c</color>
@@ -98,6 +111,8 @@
     <string name="com_parse_ui_username_taken_toast">Username is already taken, please choose a different one</string>
     <!-- From: file:/Users/Codestation/Desktop/Desktop/SpeechToText1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="drawer_close">close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
     <string name="hello_world">Hello world!</string>
     <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
     <string name="speech_prompt">Say something…</string>

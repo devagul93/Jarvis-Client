@@ -8,24 +8,24 @@ package com.parse.ui;
 
 public final class R {
 	public static final class color {
-		public static final int bg_gradient_end = 0x7f080000;
-		public static final int bg_gradient_start = 0x7f080001;
-		public static final int com_parse_ui_facebook_login_button = 0x7f080002;
-		public static final int com_parse_ui_facebook_login_button_focus = 0x7f080003;
-		public static final int com_parse_ui_facebook_login_button_push = 0x7f080004;
-		public static final int com_parse_ui_parse_login_button = 0x7f080005;
-		public static final int com_parse_ui_parse_login_button_focus = 0x7f080006;
-		public static final int com_parse_ui_parse_login_button_push = 0x7f080007;
-		public static final int com_parse_ui_parse_login_display_text = 0x7f080008;
-		public static final int com_parse_ui_parse_login_help_button_label = 0x7f080009;
-		public static final int com_parse_ui_parse_login_help_button_label_focus = 0x7f08000a;
-		public static final int com_parse_ui_parse_login_help_button_label_push = 0x7f08000b;
-		public static final int com_parse_ui_parse_login_help_button_label_selector = 0x7f080011;
-		public static final int com_parse_ui_parse_login_text_hint = 0x7f08000c;
-		public static final int com_parse_ui_twitter_login_button = 0x7f08000d;
-		public static final int com_parse_ui_twitter_login_button_focus = 0x7f08000e;
-		public static final int com_parse_ui_twitter_login_button_push = 0x7f08000f;
-		public static final int white = 0x7f080010;
+		public static final int bg_gradient_end = 0x7f090000;
+		public static final int bg_gradient_start = 0x7f090001;
+		public static final int com_parse_ui_facebook_login_button = 0x7f090002;
+		public static final int com_parse_ui_facebook_login_button_focus = 0x7f090003;
+		public static final int com_parse_ui_facebook_login_button_push = 0x7f090004;
+		public static final int com_parse_ui_parse_login_button = 0x7f090005;
+		public static final int com_parse_ui_parse_login_button_focus = 0x7f090006;
+		public static final int com_parse_ui_parse_login_button_push = 0x7f090007;
+		public static final int com_parse_ui_parse_login_display_text = 0x7f090008;
+		public static final int com_parse_ui_parse_login_help_button_label = 0x7f090009;
+		public static final int com_parse_ui_parse_login_help_button_label_focus = 0x7f09000a;
+		public static final int com_parse_ui_parse_login_help_button_label_push = 0x7f09000b;
+		public static final int com_parse_ui_parse_login_help_button_label_selector = 0x7f090011;
+		public static final int com_parse_ui_parse_login_text_hint = 0x7f09000c;
+		public static final int com_parse_ui_twitter_login_button = 0x7f09000d;
+		public static final int com_parse_ui_twitter_login_button_focus = 0x7f09000e;
+		public static final int com_parse_ui_twitter_login_button_push = 0x7f09000f;
+		public static final int white = 0x7f090010;
 	}
 	public static final class dimen {
 		public static final int com_parse_ui_horizontal_margin = 0x7f060002;
@@ -46,35 +46,35 @@ public final class R {
 		public static final int com_parse_ui_twitter_login_logo = 0x7f020006;
 	}
 	public static final class id {
-		public static final int app_logo = 0x7f0a0002;
-		public static final int create_account = 0x7f0a0014;
-		public static final int facebook_login = 0x7f0a000d;
-		public static final int login_help_email_input = 0x7f0a000b;
-		public static final int login_help_instructions = 0x7f0a000a;
-		public static final int login_help_submit = 0x7f0a000c;
-		public static final int login_password_input = 0x7f0a0005;
-		public static final int login_username_input = 0x7f0a0004;
-		public static final int parse_buttons = 0x7f0a0006;
-		public static final int parse_login = 0x7f0a0003;
-		public static final int parse_login_button = 0x7f0a0007;
-		public static final int parse_login_help = 0x7f0a0009;
-		public static final int parse_signup_button = 0x7f0a0008;
-		public static final int signup_confirm_password_input = 0x7f0a0011;
-		public static final int signup_email_input = 0x7f0a0012;
-		public static final int signup_name_input = 0x7f0a0013;
-		public static final int signup_password_input = 0x7f0a0010;
-		public static final int signup_username_input = 0x7f0a000f;
-		public static final int twitter_login = 0x7f0a000e;
+		public static final int app_logo = 0x7f0b0007;
+		public static final int create_account = 0x7f0b0019;
+		public static final int facebook_login = 0x7f0b0012;
+		public static final int login_help_email_input = 0x7f0b0010;
+		public static final int login_help_instructions = 0x7f0b000f;
+		public static final int login_help_submit = 0x7f0b0011;
+		public static final int login_password_input = 0x7f0b000a;
+		public static final int login_username_input = 0x7f0b0009;
+		public static final int parse_buttons = 0x7f0b000b;
+		public static final int parse_login = 0x7f0b0008;
+		public static final int parse_login_button = 0x7f0b000c;
+		public static final int parse_login_help = 0x7f0b000e;
+		public static final int parse_signup_button = 0x7f0b000d;
+		public static final int signup_confirm_password_input = 0x7f0b0016;
+		public static final int signup_email_input = 0x7f0b0017;
+		public static final int signup_name_input = 0x7f0b0018;
+		public static final int signup_password_input = 0x7f0b0015;
+		public static final int signup_username_input = 0x7f0b0014;
+		public static final int twitter_login = 0x7f0b0013;
 	}
 	public static final class layout {
-		public static final int com_parse_ui_parse_login_app_logo = 0x7f030001;
-		public static final int com_parse_ui_parse_login_form = 0x7f030002;
-		public static final int com_parse_ui_parse_login_fragment = 0x7f030003;
-		public static final int com_parse_ui_parse_login_help_form = 0x7f030004;
-		public static final int com_parse_ui_parse_login_help_fragment = 0x7f030005;
-		public static final int com_parse_ui_parse_login_third_party_section = 0x7f030006;
-		public static final int com_parse_ui_parse_signup_form = 0x7f030007;
-		public static final int com_parse_ui_parse_signup_fragment = 0x7f030008;
+		public static final int com_parse_ui_parse_login_app_logo = 0x7f030003;
+		public static final int com_parse_ui_parse_login_form = 0x7f030004;
+		public static final int com_parse_ui_parse_login_fragment = 0x7f030005;
+		public static final int com_parse_ui_parse_login_help_form = 0x7f030006;
+		public static final int com_parse_ui_parse_login_help_fragment = 0x7f030007;
+		public static final int com_parse_ui_parse_login_third_party_section = 0x7f030008;
+		public static final int com_parse_ui_parse_signup_form = 0x7f030009;
+		public static final int com_parse_ui_parse_signup_fragment = 0x7f03000a;
 	}
 	public static final class plurals {
 		public static final int com_parse_ui_password_too_short_toast = 0x7f040000;

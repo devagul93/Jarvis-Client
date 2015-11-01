@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:layout_margin="16dp"
+        android:id="@+id/email"
+        android:hint="Enter user email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_margin="16dp"
+        android:id="@+id/access"
+        android:hint="Enter Access key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Create "
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/image"
+        />
+
+</LinearLayout><!-- From: file:/Users/Codestation/Desktop/Desktop/SpeechToText1/app/src/main/res/layout/dialog_grant_key.xml -->
